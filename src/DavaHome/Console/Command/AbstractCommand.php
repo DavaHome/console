@@ -1,6 +1,6 @@
 <?php
 
-namespace DavaHome\Command\Console;
+namespace DavaHome\Console\Command;
 
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Helper\QuestionHelper;
