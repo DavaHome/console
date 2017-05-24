@@ -1,0 +1,12 @@
+{
+    "name": "davahome/console",
+    "license": "gpl",
+    "require": {
+        "symfony/console": "^3"
+    },
+    "autoload": {
+        "psr-4": {
+            "DavaHome\\Console\\": "src/DavaHome/Console/"
+        }
+    }
+}
