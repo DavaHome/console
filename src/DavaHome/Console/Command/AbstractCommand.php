@@ -4,6 +4,8 @@ namespace DavaHome\Console\Command;
 
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Helper\QuestionHelper;
+use Symfony\Component\Console\Output\ConsoleOutputInterface;
+use Symfony\Component\Console\Output\OutputInterface;
 
 class AbstractCommand extends Command
 {
@@ -45,5 +47,19 @@ class AbstractCommand extends Command
     protected function getQuestionHelper()
     {
         return $this->getHelper('question');
+    }
+
+    /**
+     * @param OutputInterface $output
+     *
+     * @return OutputInterface
+     */
+    protected function getErrorOutput(OutputInterface $output)
+    {
+        if ($output instanceof ConsoleOutputInterface) {
+            return $output->getErrorOutput();
+        }
+
+        return $output;
     }
 }
