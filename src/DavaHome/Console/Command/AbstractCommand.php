@@ -2,6 +2,7 @@
 
 namespace DavaHome\Console\Command;
 
+use DavaHome\Console\Helper\ProgressBar;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Helper\QuestionHelper;
 use Symfony\Component\Console\Output\ConsoleOutputInterface;
@@ -61,5 +62,16 @@ class AbstractCommand extends Command
         }
 
         return $output;
+    }
+
+    /**
+     * @param OutputInterface $output
+     * @param int             $max
+     *
+     * @return ProgressBar
+     */
+    protected function createProgressBar(OutputInterface $output, $max = 0)
+    {
+        return new ProgressBar($output, $max);
     }
 }
