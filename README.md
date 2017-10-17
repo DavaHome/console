@@ -38,6 +38,12 @@ public function execute()
 {
   $progressBar = $this->createProgressBar($output);
 }
+
+// Display tables (using DavaHome\Console\Helper\Table)
+public function execute()
+{
+  $table = $this->createTable($output);
+}
 ```
 
 
@@ -46,4 +52,12 @@ use DavaHome\Console\Helper\ProgressBar;
 
 // Use constants for defining the format
 $progressBar->setFormat(ProgressBar::FORMAT_DEBUG_NOMAX);
+```
+
+
+```php
+use DavaHome\Console\Helper\Table;
+
+// Use constants for defining the style
+$progressBar->setFormat(Table::STYLE_COMPACT);
 ```
