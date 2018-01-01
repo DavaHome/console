@@ -2,7 +2,7 @@
 
 namespace DavaHome\Console\Helper;
 
-class Table extends \Symfony\Component\Console\Helper\Table
+class TableStyle
 {
     const STYLE_DEFAULT = 'default';
     const STYLE_COMPACT = 'compact';

@@ -2,10 +2,10 @@
 
 namespace DavaHome\Console\Command;
 
-use DavaHome\Console\Helper\ProgressBar;
-use DavaHome\Console\Helper\Table;
 use Symfony\Component\Console\Command\Command;
+use Symfony\Component\Console\Helper\ProgressBar;
 use Symfony\Component\Console\Helper\QuestionHelper;
+use Symfony\Component\Console\Helper\Table;
 use Symfony\Component\Console\Output\ConsoleOutputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 

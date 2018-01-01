@@ -2,7 +2,7 @@
 
 namespace DavaHome\Console\Helper;
 
-class ProgressBar extends \Symfony\Component\Console\Helper\ProgressBar
+class ProgressBarFormat
 {
     const FORMAT_NORMAL = 'normal';
     const FORMAT_NORMAL_NOMAX = 'normal_nomax';
