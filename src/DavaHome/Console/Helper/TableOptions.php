@@ -2,7 +2,7 @@
 
 namespace DavaHome\Console\Helper;
 
-class TableStyle
+class TableOptions
 {
     const STYLE_DEFAULT = 'default';
     const STYLE_COMPACT = 'compact';

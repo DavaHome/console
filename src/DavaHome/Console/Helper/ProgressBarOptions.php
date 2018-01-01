@@ -2,7 +2,7 @@
 
 namespace DavaHome\Console\Helper;
 
-class ProgressBarFormat
+class ProgressBarOptions
 {
     const FORMAT_NORMAL = 'normal';
     const FORMAT_NORMAL_NOMAX = 'normal_nomax';

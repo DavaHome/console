@@ -33,13 +33,13 @@ public function execute()
     $this->getErrorOutput($output)->writeln('This will be sent directly to STDERR (if supported)');
 }
 
-// Display progressBars (using DavaHome\Console\Helper\ProgressBar)
+// Display progressBars
 public function execute()
 {
   $progressBar = $this->createProgressBar($output);
 }
 
-// Display tables (using DavaHome\Console\Helper\Table)
+// Display tables
 public function execute()
 {
   $table = $this->createTable($output);
@@ -48,16 +48,16 @@ public function execute()
 
 
 ```php
-use DavaHome\Console\Helper\ProgressBar;
+use DavaHome\Console\Helper\ProgressBarOptions;
 
 // Use constants for defining the format
-$progressBar->setFormat(ProgressBar::FORMAT_DEBUG_NOMAX);
+$progressBar->setFormat(ProgressBarOptions::FORMAT_DEBUG_NOMAX);
 ```
 
 
 ```php
-use DavaHome\Console\Helper\Table;
+use DavaHome\Console\Helper\TableOptions;
 
 // Use constants for defining the style
-$progressBar->setFormat(Table::STYLE_COMPACT);
+$progressBar->setFormat(TableOptions::STYLE_COMPACT);
 ```
