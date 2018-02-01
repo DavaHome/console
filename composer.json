@@ -1,6 +1,6 @@
 {
     "name": "davahome/console",
-    "license": "gpl",
+    "license": "GPL-3.0-or-later",
     "require": {
         "symfony/console": "^3"
     },
