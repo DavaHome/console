@@ -2,7 +2,7 @@
     "name": "davahome/console",
     "license": "GPL-3.0-or-later",
     "require": {
-        "symfony/console": "^3"
+        "symfony/console": ">=3 <6"
     },
     "autoload": {
         "psr-4": {
